@@ -1,5 +1,6 @@
 import Flight from './Flight';
 import AccommodationCheckin from './AccommodationCheckin';
+import AccommodationCheckOut from './AccommodationCheckOut';
 import Restaurant from './Restaurant';
 
 export default function Itinerary({itinerary}) {
@@ -25,12 +26,22 @@ export default function Itinerary({itinerary}) {
                         address={place.address}
                     />
                 ))}
+
                 {itinerary.restaurants.map(restaurant => (
                     <Restaurant
                         time={restaurant.time}
                         date={restaurant.date}
                         name={restaurant.name}
                         address={restaurant.address}
+                    />
+                ))}
+
+                {itinerary.accommodation.map(place => (
+                    <AccommodationCheckOut
+                        endDate={place.endDate}
+                        checkOutTime={place.checkOutTime}
+                        name={place.name}
+                        address={place.address}
                     />
                 ))}
             </section>

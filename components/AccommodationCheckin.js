@@ -4,7 +4,7 @@ export default function AccommodationCheckin({checkInTime , name, startDate, add
         <>
             <InformationContainer
                 icon='🏩'
-                upperDescription={`${startDate} ${checkInTime}`}
+                upperDescription={`Check in: ${startDate} ${checkInTime}`}
                 lowerDescription={`${name}, ${address}`}
             />
         </>
