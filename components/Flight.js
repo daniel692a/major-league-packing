@@ -3,7 +3,7 @@ export default function Flight({departureTime, arrivalTime, date, destination, o
     return (
         <section>
             <InformationContainer
-                icon='flight'
+                icon='✈️'
                 upperDescription={`${date} ${departureTime} ${origin}`}
                 lowerDescription={`${date} ${arrivalTime} ${destination}`}
             />
