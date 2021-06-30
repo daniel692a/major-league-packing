@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Itinerary from '../components/Itinerary';
 
 export default function Home() {
   return (
@@ -10,14 +11,16 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Major League Packing</a>
+          Welcome to <a href="https://mlh.io" target='_blank' rel='noopener noreferrer'>Major League Packing</a>!
         </h1>
+        
+        <Itinerary itinerary={{}}/>
 
       </main>
 
       <footer>
         <span>
-          Powered by{' '}<a href="https://github.com/daniel692a" target="_blank" rel="noopener noreferrer">Daniel from MLH</a>
+          Powered by{' '}<a href="https://github.com/daniel692a" target="_blank" rel="noopener noreferrer"><b>Daniel from MLH</b></a>
         </span>
       </footer>
 
