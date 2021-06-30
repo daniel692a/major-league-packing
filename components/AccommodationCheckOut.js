@@ -1,12 +1,12 @@
 import InformationContainer from './InformationContainer'
-export default function AccommodationCheckOut({checkInTime , name, startDate, address}) {
+export default function AccommodationCheckOut({checkOutTime , name, endDate, address}) {
     return (
-        <section>
+        <>
             <InformationContainer
                 icon='🏩'
-                upperDescription={`${startDate} ${checkInTime}`}
+                upperDescription={`${endDate} ${checkOutTime}`}
                 lowerDescription={`${name}, ${address}`}
             />
-        </section>
+        </>
     )
 }

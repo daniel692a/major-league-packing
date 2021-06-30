@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Itinerary from '../components/Itinerary';
+import { itinerary }  from '../data/itinerary.json'
 
 export default function Home() {
   return (
@@ -13,9 +14,7 @@ export default function Home() {
         <h1 className="title">
           Welcome to <a href="https://mlh.io" target='_blank' rel='noopener noreferrer'>Major League Packing</a>!
         </h1>
-        
-        <Itinerary itinerary={{}}/>
-
+        <Itinerary itinerary={itinerary}/>
       </main>
 
       <footer>

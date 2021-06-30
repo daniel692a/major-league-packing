@@ -1,6 +1,6 @@
 export default function InformationContainer({icon, upperDescription, lowerDescription}) {
     return (
-        <section>
+        <>
             <section className='information-container'>
                 <span className="icon">{icon}</span>
                 <span className="upper">{upperDescription}</span>
@@ -14,11 +14,13 @@ export default function InformationContainer({icon, upperDescription, lowerDescr
                     background: #f2f8fb;
                     border-radius: 8px;
                     padding: 1rem;
+                    grid-template-columns: 40px auto;
                 }
                 .icon {
                     grid-area: icon;
                     display: flex;
                     align-items: center;
+                    justifyContent: center;
                 }
                 .upper {
                     grid-area: upper;
@@ -27,6 +29,6 @@ export default function InformationContainer({icon, upperDescription, lowerDescr
                     grid-area: lower;
                 }
             `}</style>
-        </section>
+        </>
     )
 }
