@@ -3,7 +3,7 @@ export default function Restaurant({time, date, name, address}) {
     return (
         <>
             <InformationContainer
-                icon='✈️'
+                icon='🍽️'
                 upperDescription={`${date} ${time}`}
                 lowerDescription={`${date}, ${address}`}
             />
